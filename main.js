@@ -51,25 +51,25 @@ const trackList = [
     {
         name: "Cypher Nhà Làm",
         artist: "Low G, ResQ, Chí, Teddie J",
-        img: "./images/Cypher Nhà Làm.jpeg",
+        img: "./images/Cypher nhà làm.jpeg",
         src: "./music/Cypher Nhà Làm.mp3"
     },
     {
         name: "Giọng Ta",
         artist: "Daisy Le Garçon, Low G, BeepBeepChild",
-        img: "./images/Giọng Ta.jpeg",
+        img: "./images/Giọng ta.jpeg",
         src: "./music/Daisy Le Garçon - Giọng Ta (ft. Low G, BeepBeepChild) _ Official Music Video.mp3"
     },
     {
         name: "Dáng Xấu",
         artist: "Low G",
-        img: "./images/Dáng Xấu.jpeg",
+        img: "./images/Dáng xấu.jpeg",
         src: "./music/Dáng Xấu _ Low G _ Rap Nhà Làm.mp3"
     },
     {
         name: "Dáng Xinh",
         artist: "Low G, Trungng",
-        img: "./images/Dáng Xinh.jpeg",
+        img: "./images/Dáng xinh.jpeg",
         src: "./music/Dáng Xinh (prod. Trungng) _ Low G _ Rap Nhà Làm.mp3"
     },
     {
@@ -111,7 +111,7 @@ const trackList = [
     {
         name: "Chán Gái 707",
         artist: "Low G",
-        img: "./images/Chán Gái 707.jpeg",
+        img: "./images/Chán gái 707.jpeg",
         src: "./music/Chán Gái 707 _ Low G _ Rap Nhà Làm.mp3"
     },
     {
