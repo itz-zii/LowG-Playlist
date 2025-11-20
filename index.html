@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LowG Playlist - By Zii -</title>
+    <link rel="icon" href="./undefined (1).jpeg">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="bg-[#111114] h-screen relative">
+    <div class="text-white w-screen flex justify-center absolute">
+        <h1 class="font-thin left-[500px] mx-2">Hello!</h1>
+        <p class="font-thin">I'm <i class="text-purple-500 underline font-bold mr-2">Zii</i></p>
+        <p class="font-thin">Wellcome to my <span class="font-bold text-purple-400">LowG</span> Playlist</p>
+    </div>
+    <div class="text-white w-screen text-center top-5 absolute">
+        <p class="font-thin">I'm a fan of <span class="font-bold text-purple-400">LowG</span> from Vietnam</p>
+    </div>
+    <div class="flex justify-center items-center h-full gap-5 p-10">
+        <div class="bg-[#292931] w-185 h-125 rounded-xl text-white p-10 relative">
+            <!-- Main -->
+            <main class="relative flex justify-between">
+                <div class="details flex flex-col items-center w-[40%]">
+                    <div class="track-axsrtist flex items-center">
+                        <img id="track-img-small" class="w-5 mx-2 rounded-full" src="">
+                        <h2 id="track-artist" class="hover:underline">Artist Name</h2>
+                    </div>
+                    <div class="track-art my-5 bg-[#111114] w-60 h-60 rounded-xl overflow-hidden">
+                        <img id="track-img" class="w-full h-full object-cover" src="">
+                    </div>
+                    <div id="track-name" class="track-name text-xl font-semibold"></div>
+                </div>
+                <div class="bg-[#1d1d22] w-80 max-h-[350px] rounded-xl text-white p-5 overflow-y-auto">
+                      <h2 class="text-xl font-bold mb-3">Low G Album</h2>
+                      
+                       <div id="playlist" class="flex flex-col gap-3"></div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-[#515160] bottom-0 left-0 h-13 w-full rounded-b-xl absolute flex flex-col justify-between">
+                <div id="footer-wave" class="footer-wave">
+                    <div class="bar left"></div>
+                    <div class="bar left"></div>
+                    <div class="bar left"></div>
+                    <div class="bar left"></div>
+                    <div class="bar left"></div>
+
+                    <div class="bar right"></div>
+                    <div class="bar right"></div>
+                    <div class="bar right"></div>
+                    <div class="bar right"></div>
+                    <div class="bar right"></div>
+                </div>
+
+
+
+                <div id="seekbar" class="group relative w-full h-2 bg-gray-500/40 rounded-full cursor-pointer">
+                    <div id="seekbar-progress" class="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" style="width: 0%;"></div>
+                    <div id="seekbar-thumb" class="absolute top-1/2 -translate-y-1/2 bg-purple-500 rounded-full w-3 h-3 opacity-0 scale-0 transition-opacity duration-200 ease-out group-hover:opacity-100 group-hover:scale-100" style="left: -6px;"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                    <div id="left" class="flex">
+                    <div class="flex items-center px-5 gap-4">
+                        <div class="prev-track cursor-pointer text-xl" onclick="prevTrack()">
+                            <i class="fa-solid fa-backward-fast"></i>
+                        </div>
+                        <div class="playpause-track cursor-pointer text-2xl" onclick="playpauseTrack()">
+                            <i id="play-icon" class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="next-track cursor-pointer text-xl" onclick="nextTrack()">
+                            <i class="fa-solid fa-forward-fast"></i>
+                        </div>
+                    </div>
+                    <div class="text-sm opacity-90 flex items-center justify-between font-semibold">
+                        <span id="current-time" class="font-thin">0:00</span>
+                        <span class="font-thin mx-2">/</span>
+                        <span id="duration-time" class="font-thin">0:00</span>
+                    </div>
+                    </div>
+                    <div class="flex items-center gap-3 mx-5">
+                        <i id="shuffleBtn" class="fa-solid fa-repeat text-white cursor-pointer"></i>
+                        <input id="volume-slider" type="range" min="0" max="1" step="0.01" class="w-32 h-1 bg-gray-300 rounded-lg cursor-pointer accent-transparent"></input>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="bg-overlay"></div>
+    <script src="main.js"></script>
+</body>
+</html>

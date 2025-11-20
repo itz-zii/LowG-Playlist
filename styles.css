@@ -1,0 +1,69 @@
+.dragging #seekbar-thumb {
+        transition: none !important;
+    }
+.dragging #seekbar-progress {
+        transition: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #68686875;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6a5af9, #ff4ecd);
+    border-radius: 10px;
+}
+
+.bg-fade {
+    transition: background 1.5s ease;
+}
+
+
+#bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease;
+    z-index: -1;
+}
+
+.shuffle-active {
+    color: #ff72e0 !important;
+    text-shadow: 0px 0px 8px rgb(255, 0, 247);
+}
+
+#footer-wave {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#footer-wave .bar {
+    width: 4px;
+    height: 6px;
+    background: linear-gradient(180deg, #6a5af9, #ff4ecd);
+    border-radius: 6px;
+    transition: height 0.1s linear;
+}
+
+#footer-wave .left {
+    transform-origin: top right;
+}
+
+#footer-wave .right {
+    transform-origin: top left;
+}
