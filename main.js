@@ -611,6 +611,8 @@ function visualizeWave() {
 }
 
 
+console.log("soo i made this just for fun");
+console.log("- Zii -");
 
 
 updatePlaylistUI();
